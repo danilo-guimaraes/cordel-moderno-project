@@ -109,7 +109,7 @@ section#img01 {
     background-position: right center;
 }
 section#img02 {
-    background-image: url(https://github.com/danilo-guimaraes/cordel-moderno-project/blob/main/imagens/background002.jpg);
+    background-image: url(https://raw.githubusercontent.com/danilo-guimaraes/cordel-moderno-project/refs/heads/main/imagens/background002.jpg);
 }
 section.imagem {
 
