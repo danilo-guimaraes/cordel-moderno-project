@@ -1,126 +1,98 @@
-@font-face {
-    font-family: 'Sriracha';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/sriracha/v16/0nkrC9D4IuYBgWcI9NbLTwHSoQ.woff2) format('woff2');
-    unicode-range: U +02D7, U +0303, U +0331, U +0E01 -0E5B, U +200C -200D, U +25CC;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+NZ+Guides&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Playwrite+NZ+Guides&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --font1: "Bebas Neue", sans-serif;
+    --font2: "Kaushan Script", cursive;
+    --font3: "SN Pro", sans-serif;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+
+*{
+    margin: 0;
+    padding: 0;
     font-size: 1em;
 }
 
-:root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
-}
-html,
-body {
+html, body{
     min-height: 100vh;
     background-color: darkgray;
-    font-family: var(--fonte1);
+    font-family: var(--font2);
+
 }
-
-
-header {
+header{
     background-color: black;
     color: white;
     text-align: center;
-    display: block;
-    unicode-bidi: isolate;
-
 
 }
-header>h1 {
+
+header > h1{
     padding-top: 50px;
+    /* text-transform: capitalize; */
     font-variant: small-caps;
-    font-family: var(--fonte2);
+    font-family: var(--font1);
     font-size: 10vw;
-    margin: auto;
+
 }
-header>p {
+
+header > p{
     padding-bottom: 50px;
-    margin: auto;
+
 }
-header a,
-footer a {
+
+header a, footer a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
+    }
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
 
 }
-
-
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-p {
-    width: 40%;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    padding-left: 30px;
-    text-indent: 1.7%;
-
-}
-section.imagem>p {
-    display: inline-block;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
-
-}
-section.normal {
-    background-color: white;
-    color: black;
-
-}
-
-section {
+section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
     padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 3.5vw;
+}
 
+section > p {
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.815);
+    background-size: cover;
+    background-attachment: fixed;
 
 }
-section {
-    display: block;
-    unicode-bidi: isolate;
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 }
-section#img01 {
+section#img01{
     background-image: url(https://raw.githubusercontent.com/danilo-guimaraes/cordel-moderno-project/refs/heads/main/imagens/background001.jpg);
     background-position: right center;
 }
-section#img02 {
+
+section#img02{
     background-image: url(https://raw.githubusercontent.com/danilo-guimaraes/cordel-moderno-project/refs/heads/main/imagens/background002.jpg);
 }
-section.imagem {
 
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed;
-}
 footer{
     background-color: black;
-    color: white;
     text-align: center;
+    color: white;
+    padding: 10px;
 }
