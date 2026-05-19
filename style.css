@@ -105,11 +105,11 @@ section {
     unicode-bidi: isolate;
 }
 section#img01 {
-    background-image: url(../imagens/background001.jpg);
+    background-image: url(imagens/background001.jpg);
     background-position: right center;
 }
 section#img02 {
-    background-image: url(../imagens/background002.jpg);
+    background-image: url(imagens/background002.jpg);
 }
 section.imagem {
 
